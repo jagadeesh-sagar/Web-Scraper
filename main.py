@@ -60,7 +60,7 @@ if __name__=="__main__":
             content = databases.read(extracted)
             if not content:
                 databases.store(extracted)
-                print("jaggu")
+                my_send_email(extracted)
         time.sleep(2)
 
 
